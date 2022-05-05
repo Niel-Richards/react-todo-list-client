@@ -1,0 +1,111 @@
+.App {
+    max-width: 39rem;
+    margin:2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Section */
+.todo__header {
+    background-color: #1DA1F2;
+}
+.todo__logo {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+
+/* Middle Section */
+.Middle__wrapper {
+    width: 100%;
+    flex-grow: 3;
+    min-height: 50vh;
+    max-height: 75vh;
+    background-color: #fff;
+    border-bottom: 1px solid lightgray;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 1rem 0;
+}
+
+.Middle__wrapper::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+  
+.Middle__wrapper::-webkit-scrollbar-track {
+    background-color: hsl(203, 89%, 53%, 0.5);
+}
+
+.Middle__wrapper::-webkit-scrollbar-thumb {
+    background-color: hsl(203, 89%, 53%, 0.75);
+}
+
+.Middle__wrapper ul {
+    list-style: none;
+}
+
+.Task__wrapper {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid lightgrey;
+    padding: 0.4rem;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "tick desc del"
+        "tick date del";
+
+}
+
+.Task__tickBox {
+    grid-area: tick;
+}
+.Task__desc {
+    grid-area: desc;
+}
+.Task__desc--complete{
+    text-decoration: line-through;
+}
+.Task__delete {
+    grid-area: del;
+}
+.Task__date {
+    grid-area: date;
+    font-size: 0.7rem;
+    color: #777;
+}
+
+/* TaskInput Section */
+.TaskInput__wrapper {
+    display: flex;
+    min-height: 1.8rem;
+    flex: 1;
+    /* margin-top: 1rem; */
+    
+}
+
+.TaskInput__input {
+    flex-grow: 3;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border: 1px solid lightgray;
+    outline:none;
+}
+.TaskInput__input:focus {
+    border: 1px solid #1DA1F2;
+
+}
+
+.TaskInput__add-btn {
+    flex: 1;
+    color: #1DA1F2;
+    background-color: #fff;
+    border: 2px solid #1DA1F2;
+    outline: none;
+}
+
+.TaskInput__add-btn:hover, .TaskInput__add-btn:focus {
+    color: #fff;
+    background-color: #1DA1F2;
+}
