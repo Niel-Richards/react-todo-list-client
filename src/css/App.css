@@ -8,6 +8,7 @@
 /* Top Section */
 .todo__header {
     background-color: #1DA1F2;
+    box-shadow: 5px 5px rgba(148, 148, 148,0.5);
 }
 .todo__logo {
     font-size: 2.5rem;
@@ -26,6 +27,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     margin: 1rem 0;
+    box-shadow: 5px 5px rgba(148, 148, 148,0.5);
 }
 
 .Middle__wrapper::-webkit-scrollbar {
@@ -80,6 +82,7 @@
     display: flex;
     min-height: 1.8rem;
     flex: 1;
+    box-shadow: 5px 5px rgba(148, 148, 148,0.5);
     /* margin-top: 1rem; */
     
 }
@@ -99,9 +102,9 @@
 
 .TaskInput__add-btn {
     flex: 1;
-    color: #1DA1F2;
+    color: hsl(203, 89%, 53%, 0.75);
     background-color: #fff;
-    border: 2px solid #1DA1F2;
+    border: 1px solid hsl(203, 89%, 53%, 0.75);
     outline: none;
 }
 

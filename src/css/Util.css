@@ -15,3 +15,11 @@
 .py-2 {
     padding: 2rem 0 2rem 0;
 }
+
+/* Icons */
+.center {
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    font-size: 1.25rem;
+}
